@@ -1,0 +1,17 @@
+
+-- Question 16
+-- Delete all rows from COPYOFDEPT table
+
+CREATE TABLE COPYOFDEPT (
+    DNo NUMBER,
+    DName VARCHAR(50),
+    ManagerSSN NUMBER,
+    MgrStartDate DATE
+);
+
+INSERT INTO COPYOFDEPT VALUES
+(1, 'Finance', 1001, TO_DATE('01-JAN-2020','DD-MON-YYYY'));
+
+DELETE FROM COPYOFDEPT;
+
+SELECT * FROM COPYOFDEPT;
